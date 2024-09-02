@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Find Your Perfect Rental Room</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="search">
+        <h2>Search for Rooms</h2>
+        <form id="search-form">
+            <input type="text" id="location" placeholder="Enter location">
+            <input type="number" id="price" placeholder="Max price">
+            <input type="number" id="size" placeholder="Room size (sqft)">
+            <select id="type">
+                <option value="private">Private Room</option>
+                <option value="shared">Shared Room</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="results">
+        <h2>Results</h2>
+        <div id="room-list"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Room Finder</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
